@@ -332,7 +332,7 @@ class AddWithCache {
     to the cache)
 */
 
-function noCache(num1, num2, num3) {
+function noCacheAdd(num1, num2, num3) {
   let answer = num1 + num2 + num3;
   return answer;
 }
@@ -351,10 +351,10 @@ let add = new AddWithCache()
 // CREATE A NEW INSTANCE OF YOUR CLASS
 
 console.time("not memoized function time");
-console.log(noCache(5,5,5))
-console.log(noCache(5,5,5))
-console.log(noCache(5,5,5))
-console.log(noCache(5,5,5))
+console.log(noCacheAdd(5,5,5))
+console.log(noCacheAdd(5,5,5))
+console.log(noCacheAdd(5,5,5))
+console.log(noCacheAdd(5,5,5))
 console.timeEnd("not memoized function time");
 
 console.time("memoized function time");
